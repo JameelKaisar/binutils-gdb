@@ -2786,6 +2786,8 @@
 #define MASK_MOD 0xfe00707f
 #define MATCH_FACTX 0x106b
 #define MASK_FACTX 0x707f
+#define MATCH_COMB 0x200006b
+#define MASK_COMB 0xfe00707f
 #endif /* RISCV_ENCODING_H */
 #ifdef DECLARE_INSN
 DECLARE_INSN(slli_rv32, MATCH_SLLI_RV32, MASK_SLLI_RV32)
@@ -3244,6 +3246,7 @@ DECLARE_INSN(th_sync_s, MATCH_TH_SYNC_S, MASK_TH_SYNC_S)
 /* Custom Instructions */
 DECLARE_INSN(mod, MATCH_MOD, MASK_MOD)
 DECLARE_INSN(factx, MATCH_FACTX, MASK_FACTX)
+DECLARE_INSN(comb, MATCH_COMB, MASK_COMB)
 #endif /* DECLARE_INSN */
 #ifdef DECLARE_CSR
 /* Unprivileged Counter/Timers CSRs.  */
