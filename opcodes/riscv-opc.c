@@ -514,6 +514,7 @@ const struct riscv_opcode riscv_opcodes[] =
 {"subw",       64, INSN_CLASS_I, "d,s,t",     MATCH_SUBW, MASK_SUBW, match_opcode, 0 },
 /* Custom Instructions */
 {"mod",         0, INSN_CLASS_I, "d,s,t",     MATCH_MOD, MASK_MOD, match_opcode, 0 },
+{"factx",       0, INSN_CLASS_I, "d,s,j",     MATCH_FACTX, MASK_FACTX, match_opcode, 0 },
 
 /* Atomic memory operation instruction subset.  */
 {"lr.w",            0, INSN_CLASS_A, "d,0(s)",   MATCH_LR_W, MASK_LR_W|MASK_AQRL, match_opcode, INSN_DREF|INSN_4_BYTE },

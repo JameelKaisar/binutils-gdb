@@ -2784,6 +2784,8 @@
 /* Custom Instructions */
 #define MATCH_MOD 0x6b
 #define MASK_MOD 0xfe00707f
+#define MATCH_FACTX 0x106b
+#define MASK_FACTX 0x707f
 #endif /* RISCV_ENCODING_H */
 #ifdef DECLARE_INSN
 DECLARE_INSN(slli_rv32, MATCH_SLLI_RV32, MASK_SLLI_RV32)
@@ -3241,6 +3243,7 @@ DECLARE_INSN(th_sync_is, MATCH_TH_SYNC_IS, MASK_TH_SYNC_IS)
 DECLARE_INSN(th_sync_s, MATCH_TH_SYNC_S, MASK_TH_SYNC_S)
 /* Custom Instructions */
 DECLARE_INSN(mod, MATCH_MOD, MASK_MOD)
+DECLARE_INSN(factx, MATCH_FACTX, MASK_FACTX)
 #endif /* DECLARE_INSN */
 #ifdef DECLARE_CSR
 /* Unprivileged Counter/Timers CSRs.  */
